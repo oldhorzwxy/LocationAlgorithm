@@ -9,20 +9,20 @@ package cn.navior.app.location_algorithm;
  */
 public class Rssi2Distance {
 
-	private double a;
-	private double n;
+	private float a;
+	private float n;
 	
 	/**
 	 * Constructor with default attribute values.
-	 * @param a double value of A in the model
-	 * @param n double value of n in the model
+	 * @param a float value of A in the model
+	 * @param n float value of n in the model
 	 */
-	Rssi2Distance( double a, double n ) {
+	Rssi2Distance( float a, float n ) {
 		setA( a );
 		setN( n );
 	}
 
-	double getA() {
+	float getA() {
 		return a;
 	}
 
@@ -30,12 +30,12 @@ public class Rssi2Distance {
 	 * The setter is reserved to make the A value able to be updated in practice.
 	 * @param a
 	 */
-	void setA( double a ) {
+	void setA( float a ) {
 		// TODO check for validity of A
 		this.a = a;
 	}
 
-	double getN() {
+	float getN() {
 		return n;
 	}
 
@@ -43,7 +43,7 @@ public class Rssi2Distance {
 	 * The setter is reserved to make the n value able to be updated in practice.
 	 * @param n
 	 */
-	void setN( double n ) {
+	void setN( float n ) {
 		// TODO check for validity of n
 		this.n = n;
 	}
@@ -52,10 +52,10 @@ public class Rssi2Distance {
 	 * Calculate the distance from rssi value.
 	 * In this kind of interface, no Gauss-filtering is performed.
 	 * @param rssi RSSI value
-	 * @return double type distance in centimeter
+	 * @return float type distance in centimeter
 	 */
-	double getDistance( int rssi ) {
+	float getDistance( int rssi ) {
 		// TODO calculate distance
-		return 0.0;
+		return 0.0f;
 	}
 }

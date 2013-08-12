@@ -7,29 +7,29 @@ package cn.navior.app.location_algorithm;
 *
 */
 public class Location {
-	private double x;
-	private double y;
+	private float x;
+	private float y;
 	private int floor;
 	
-	public Location( double x, double y, int floor ) {
+	public Location( float x, float y, int floor ) {
 		setX( x );
 		setY( y );
 		setFloor( floor );
 	}
 	
-	public double getX() {
+	public float getX() {
 		return x;
 	}
 	
-	public void setX( double x ) {
+	public void setX( float x ) {
 		this.x = x;
 	}
 	
-	public double getY() {
+	public float getY() {
 		return y;
 	}
 	
-	public void setY( double y ) {
+	public void setY( float y ) {
 		this.y = y;
 	}
 	

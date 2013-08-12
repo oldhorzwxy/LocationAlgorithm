@@ -23,31 +23,31 @@ public class RoughLocator {
 	 */
 	class LocationDistancePair {
 		
-		private double x;
-		private double y;
+		private float x;
+		private float y;
 		private int floor;
-		private double distance;
+		private float distance;
 		
-		LocationDistancePair( double x, double y, int floor, double distance ) {
+		LocationDistancePair( float x, float y, int floor, float distance ) {
 			setX( x );
 			setY( y );
 			setFloor( floor );
 			setDistance( distance );
 		}
 		
-		double getX() {
+		float getX() {
 			return x;
 		}
 		
-		void setX( double x ) {
+		void setX( float x ) {
 			this.x = x;
 		}
 		
-		double getY() {
+		float getY() {
 			return y;
 		}
 		
-		void setY( double y ) {
+		void setY( float y ) {
 			this.y = y;
 		}
 		
@@ -59,11 +59,11 @@ public class RoughLocator {
 			this.floor = floor;
 		}
 		
-		double getDistance() {
+		float getDistance() {
 			return distance;
 		}
 		
-		void setDistance( double distance ) {
+		void setDistance( float distance ) {
 			this.distance = distance;
 		}
 	}

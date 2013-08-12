@@ -7,19 +7,19 @@ package cn.navior.app.location_algorithm;
  */
 public class Locator {
 	
-	private double currentX;
-	private double currentY;
+	private float currentX;
+	private float currentY;
 	private int currentFloor;
 	
 	/**
 	 * Create a locator.
 	 * This model has no presumption of using which kind of method or device to do locating.
 	 * The default location in this model is ( 0, 0, 1 ), which means x = 0, y = 0 and floor = 1.
-	 * x and y are double value. floor is int value.
+	 * x and y are float value. floor is int value.
 	 */
 	public Locator(){
-		currentX = 0.0;
-		currentY = 0.0;
+		currentX = 0.0f;
+		currentY = 0.0f;
 		currentFloor = 1;
 		
 		startLocating();
@@ -45,7 +45,7 @@ public class Locator {
 	 * Only the background work logic can update the location value.
 	 * @param x
 	 */
-	void setX( double x ) {
+	void setX( float x ) {
 		// TODO maybe not thread safe
 		this.currentX = x;
 	}
@@ -54,7 +54,7 @@ public class Locator {
 	 * Only the background work logic can update the location value.
 	 * @param y
 	 */
-	void setY( double y ) {
+	void setY( float y ) {
 		// TODO maybe not thread safe
 		this.currentY = y;
 	}
