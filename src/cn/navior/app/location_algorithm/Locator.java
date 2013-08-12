@@ -46,6 +46,7 @@ public class Locator {
 	 * @param x
 	 */
 	void setX( double x ) {
+		// TODO maybe not thread safe
 		this.currentX = x;
 	}
 	
@@ -54,6 +55,7 @@ public class Locator {
 	 * @param y
 	 */
 	void setY( double y ) {
+		// TODO maybe not thread safe
 		this.currentY = y;
 	}
 	
@@ -65,6 +67,7 @@ public class Locator {
 	 */
 	void setFloor( int floor ) {
 		// TODO floor representation
+		// TODO maybe not thread safe
 		this.currentFloor = floor;
 	}
 
@@ -129,10 +132,6 @@ public class Locator {
 		
 		LocatingThread( Locator locator ) {
 			this.locator = locator;
-		}
-		
-		Locator getLocator() {
-			return locator;
 		}
 		
 		@Override
