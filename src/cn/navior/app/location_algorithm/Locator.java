@@ -119,7 +119,7 @@ public class Locator {
 
 	/**
 	 * Override Thread default implementation to do customized work on locating.
-	 * This implementation may not used outside.
+	 * This implementation may not used outside the package.
 	 * @author wangxiayang
 	 *
 	 */
