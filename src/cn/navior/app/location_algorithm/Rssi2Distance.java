@@ -50,6 +50,7 @@ public class Rssi2Distance {
 	
 	/**
 	 * Calculate the distance from rssi value.
+	 * In this kind of interface, no Gauss-filtering is performed.
 	 * @param rssi RSSI value
 	 * @return double type distance in centimeter
 	 */
